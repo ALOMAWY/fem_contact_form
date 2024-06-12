@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/all.min.css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
+ <!-- Check Icon  -->
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+
+
+    <div class="massage-sent-box">
+      <h4> <i class="fa-regular fa-circle-check"></i> Massage Sent!</h4>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <div class="container">
+      <header><h1>Contact Us</h1></header>
+      <form  class="form" >
+        <div class="name">
+          <div class="firstName">
+          
+          <label for="firstNameInput">First Name</label>
+          <input
+            type="text"
+            name="firstNameInput"
+            id="firstNameInput"
+            class="fisrt-name-input"
+            data-error="first-name-error"
+          /> <span class="first-name-error error-text">This field •s reauvred</span>
+        </div>
+
+        <div class="lastName">
+          <label for="lastNameInput">Last Name</label>
+          <input
+            type="name"
+            name="lastNameInput"
+            id="lastNameInput"
+            class="last-name-input"
+            data-error="last-name-error"
+          /> <span class="last-name-error error-text">This field •s reauvred</span>
+        </div>
+        </div>
+
+        <div class="email">
+          <label for="emailInput">Email Address</label>
+          <input type="email" name="emailInput" id="emailInput" data-error="email-name-error"/>
+           <span class="email-name-error error-text">'please enter a valid email address</span>
+          
+        </div>
+        <div class="queryType">
+          <h4 class="title">Query Type</h4>
+
+<div class="options" data-error="options-error">
+            <div class="f-option option">
+            <input type="radio" name="option" id="f-option"  />
+            <label  for="f-option">General Enquiry</label>
+          </div>
+          <div class="s-option option">
+            <input type="radio" name="option" id="s-option" />
+            <label for="s-option">Support Request</label>
+          </div>
+ <span class="options-error error-text">This field •s reauvred</span></div>
+        </div>
+        <div class="text-area">
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage"  data-error="massage-error"></textarea> <span class="massage-error error-text">This field •s reauvred</span>
+        </div>
+        <div class="accept">
+          <input type="checkbox" name="accept" id="accept"  data-error="accept-error" />
+          <label for="accept">I consent to being contacted by the team </label> 
+          <span class="accept-error error-text">To submit this form. please consent to being contacted</span>
+        </div>
+        <button  type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+
+  </body>
+</html
